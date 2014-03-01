@@ -3,10 +3,11 @@
 body{background-color:gray}
 
 div{
-	border: solid 1px  blue;
+	border: solid 1px transparent;
 }
 
 .container{
+	position: relative;
 	width: 960px;
 	margin: 0 auto;
 }
@@ -66,12 +67,16 @@ a:hover{
 	float: left;
 	padding: 8px;
 	width: 285px;
-	margin:5px;
+	margin:-10px 5px 0 0;
+	
 }
 .pesquisar input.btn {
+	top: 125px;
+	right: 10px;
+	position: absolute;
 	background: none repeat scroll 0 0 transparent;
 	border: 0 none;
-	margin: 10px 0 0 -40px;
+	/*margin: -5px 0 0 -10px;*/
 	padding: 0;
 	width: auto;
 }
